@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1 ,maximum-scale=1">
+    <link href="img/1.png" type="imagenes" rel="shortcurt icon" />
+    <!-- Estilos CSS y SASS -->
+    <link rel="stylesheet" href="sass/styles.css">
+    <link rel="stylesheet" href="sass/normalize.css">
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Brillo JD_Plus</title>
+</head>
+<body>
+    <!-- BOTONES CONTACTO -->
+    <div class="contacto">
+        <div class="contacto-items">
+            <div class="contacto-item">
+                <a href="#" id="btn-ws">
+                    <img src="img/whatsapp.png" alt="">
+                </a>
+            </div>
+            <div class="contacto-item">
+                <a href="tel:+5491162866910">
+                    <img src="img/phone.png" alt="">
+                </a>
+            </div>
+            <div class="contacto-item">
+                <a href="#" id="modal-email">
+                    <img src="img/email.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="contacto-title" id="contacto-title">
+            <h3>contactanos</h3>
+        </div>
+    </div>
+    <!-- Ventana Modal Email Confirmacion -->
+    <div id="modal-confirm" class="mascara">
+        <div class="contenido">
+            <div class="modal-content">
+                <div class="modal-title">
+                    <img src="img/1.png" alt="lg">
+                    <h3>Consulta Enviada Correctamente</h3>
+                </div>
+                <div class="modal-body">
+                    <hr>
+                    <p>En breve nos comunicaremos con usted</p>
+                    <p>¡Muchas Gracias!</p>
+                </div>
+                <hr>
+                <div class="modal-footer">
+                    <h3>Brillo JD_Plus</h3>
+                    <button type="button" id="aceptarEditarButton">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- VENTANA MODAL FORMULARIO CONTACTO -->
+    <div id="modal-contacto" class="mascara">
+        <div class="contenido">
+            <div class="modal-content">
+                <div class="modal-title">
+                    <img src="img/1.png" alt="lg">
+                    <h3>Envienos su consulta</h3>
+                    <span class="cerrar" id="cerrarRegistro">&times;</span>
+                </div>
+                <hr>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="input-form">
+                            <input type="text" id="nombre" placeholder="Nombre">
+                            <span id="errorNombre"></span>
+                        </div>
+                        <div class="input-form">
+                            <input type="number" id="celular" placeholder="Celular">
+                            <span id="errorTelefono"></span>
+                        </div>
+                        <div class="input-form">
+                            <input type="email" id="correo" placeholder="Correo">
+                            <span id="errorEmail"></span>
+                        </div>
+                        <div class="input-form">
+                            <textarea id="mensaje">Mensaje</textarea>
+                            <span id="errorComentario"></span>
+                        </div>
+                    </form>        
+                </div>
+                <hr>
+                <div class="modal-footer">
+                    <h3>Brillo JD_Plus</h3>
+                    <button type="button" id="consulta">Consultar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NAVEGACION -->
+    <nav>
+        <div class="menu-btn" id="btn-menu">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <div class="nav-logo">
+            <img src="img/1.png" alt="logo">
+        </div>
+        <div class="link" id="nav-navbar">
+            <div class="link-item">
+                <a href="#inicio">Inicio</a>
+            </div>
+            <div class="link-item">
+                <a href="#nosotros">Nosotros</a>
+            </div>
+            <div class="link-item">
+                <a href="#servicios">Servicios</a>
+            </div>
+        </div>
+    </nav>
+    <!-- INICIO -->
+    <div class="masthead">
+        <div class="masthead-img">
+            <img src="img/1.png" alt="logomasthead">
+            <h1>SABEMOS DE LIMPIEZA</h1>
+            <h1>¿NECESITA UN PRESUPUESTO?</h1>
+            <h3>Utilice nuestro cotizador online ingresando aquí</h3>
+            <button class="btn">Cotizador Online</button>
+        </div>
+        <div class="masthead-text">
+            <p>
+                Nuestro compromiso es asegurar calidad y servicio en la higiene de cada espacio de trabajo confiado a Brillo JD_Plus 
+                contando con sistemas innovadores, controles de calidad, productos y equipos de punta, sumado a un grupo de
+                profesionales preparados para cuidar las locaciones.<br><br>
+                Somos una <strong>empresa familiar con más de 5 años en el mercado</strong>, los valores que nos definen son la responsabilidad, el profesionalismo y la excelencia.
+            </p>
+        </div>
+    </div>
+    <!-- NOSTROS -->
+    <div class="nosotros" id="nosotros">
+        <div class="nosotros-title">
+            <h1>Abono mensual</h1>
+        </div>
+        <div class="nosotros-text">
+            <p>
+                Solución integral que contempla mano de obra, materiales, insumos de tocador, maquinarias y elementos necesarios para la
+                prestación del servicio. A su vez, garantizamos los índices más bajo de rotación de personal, manteniendo un plantel
+                estable. <br><br>
+                Limpiamos de forma integral y regular los diferentes ambientes, ya sea una oficina o un edifico en su totalidad, siempre
+                mantero enfoque en el detalle sin despreciar lugares poco visibles como cañerías, subsuelos o cocheras.
+            </p>            
+        </div>
+    </div>
+    <div class="abono">
+        <div class="abono-text">
+            <p>
+                Garantizamos un servicio de la mejor calidad a través de maquinaria de última generación y personal altamente
+                calificado,  Nuestro objetivo es brindar servicios de alta calidad y a precios competitivos.<br><br>
+                Como objetivo principal apuntamos a la excelencia en los servicios que desarrollamos. Para ello contamos con supervisión
+                preparada para realizar un seguimiento, tanto técnico como profesional en proyectos de limpieza.<br><br>
+                En caso de no estar conforme con el servicio prestado, usted podrá rescindir del mismo en el momento que lo crea
+                oportuno, sin el pago de adicional o indemnización alguna.
+            </p>
+        </div>
+        <div class="abono-title">
+            <h1>Consideramos que la responsabilidad es la clave del éxito.</h1>
+        </div>
+    </div>
+    <div class="art">
+        <div class="art-title">
+            <h1>Nos hacemos cargo del pago de sueldos aportes previsionales y seguros ART.</h1>
+        </div>
+        <div class="art-text">
+            <p>
+                Es importante resaltar, que nuestra firma cumplimenta con todas las obligaciones sociales y laborales que devienen de la
+                relación de dependencia con nuestros operarios.<br><br>
+                El consorcio se evita de tener personal en relación de dependencia y de cumplir con cuestiones legales, laborales y
+                sindicales de los trabajadores que son costosas y pueden originar contingencias.<br><br>
+                Los encargados tienen limitaciones en las tareas que pueden realizar impuestas por su mismo Convenio Colectivo de
+                Trabajo Nº 306/98 que en su artículo 21, inciso 7º establece que el trabajador no puede limpiar paredes ni piletas de
+                natación, el personal provisto por Brillo JD_ Plus no está sujeto a ningún tipo de limitaciones.
+            </p>
+        </div>
+    </div>
+    <!-- SERVICIOS -->
+    <div class="servicios-title" id="servicios">
+        <h1>Nuestros servicios</h1>
+    </div>
+    <div class="servicios">
+        <div class="servicios-col">
+            <img src="img/hidro.png" alt="">
+            <h3>Hidrolavado Perimetral, Hidrolavado Parcial, Hidrolavado de Pisos.</h3>
+        </div>
+        <div class="servicios-col">
+            <img src="img/edificio.png" alt="">
+            <h3>Edificios de viviendas y de oficinas.</h3>
+        </div>
+        <div class="servicios-col">
+            <img src="img/ph.png" alt="">
+            <h3>Propiedades horizontales (PH).</h3>
+        </div>
+        <div class="servicios-col">
+            <img src="img/clean.png" alt="">
+            <h3>Limpieza de Empresas y Oficinas.</h3>
+        </div>
+        <div class="servicios-col">
+            <img src="img/consorcio.png" alt="">
+            <h3>Limpieza de Consorcios y Edificios.</h3>
+        </div>
+        <div class="servicios-col">
+            <img src="img/comercial.png" alt="">
+            <h3>Limpieza de Locales Comerciales.</h3>
+        </div>
+        <div class="servicios-col">
+            <img src="img/comercio2.png" alt="">
+            <h3>Limpieza de Comercios.</h3>
+        </div>
+        <div class="servicios-col">
+            <img src="img/evento.png" alt="">
+            <h3>Limpieza de Salones.</h3>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="img/2.png" alt="log-footer">
+            </div>
+        </div>
+        <div class="footer-center">
+            <div class="title-contacto">
+                <i class="fas fa-chevron-right" id="btn-right"></i>
+                <h1>Contacto</h1>
+            </div>
+            <div class="title-contacto-item">
+                <p><strong>Telefono:</strong> 112233445566</p>
+                <p><strong>Email:</strong> 232343@1rerfrf.com</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-redes">
+                <div class="title-redes">
+                    <i class="fas fa-chevron-right" id="btn-right"></i>
+                    <h1>Redes</h1>
+                </div>
+                <div class="icon-redes">
+                    <a href="#" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
