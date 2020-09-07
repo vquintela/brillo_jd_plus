@@ -343,8 +343,8 @@ nav .link-item:hover::after {
   width: 100%;
   height: 100vh;
   overflow-y: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/limp.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/limp.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/limp.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/limp.jpeg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
