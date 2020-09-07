@@ -316,7 +316,7 @@ nav {
         width: 30%;
         font-size: 1.2rem;
         border-left: 4px solid $sec-naranja;
-        color: $sec-verde;
+        color: $sec-azul;
         p {
             margin-left: 15px;
         }
@@ -327,6 +327,9 @@ nav {
         text-align: right;
         margin-right: 50px;
         color: $sec-azul;
+        img {
+            max-width: 25%;
+        }
     }
 }
 
@@ -340,8 +343,8 @@ nav {
     .abono-text {
         width: 40%;
         font-size: 1.2rem;
-        border-right: 4px solid $sec-azul;
-        color: $sec-verde;
+        border-right: 4px solid $sec-naranja;
+        color: $sec-azul;
         p {
             margin-right: 15px;
             text-align: right;
@@ -351,6 +354,9 @@ nav {
         width: 30%;
         margin-left: 50px;
         color: $sec-azul;
+        img {
+            max-width: 40%;
+        }
     }
 }
 
@@ -361,6 +367,7 @@ nav {
     font-size: 1.5rem;
     padding: 30px 0;
     text-align: center;
+    color: $sec-azul;
 }
 
 .servicios {
@@ -378,6 +385,8 @@ nav {
     }
     h3 {
         padding:20px;
+        font-size: 1.5rem;
+        color: $sec-azul;
     }
 }
 
@@ -494,6 +503,7 @@ footer {
         .art-title,
         .art-text {
             width: 90%;
+            margin: auto;
         }
         .masthead-text {
             margin-top: 30px;

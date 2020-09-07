@@ -430,7 +430,7 @@ nav .link-item:hover::after {
   width: 30%;
   font-size: 1.2rem;
   border-left: 4px solid #f9b233;
-  color: #9ec41a;
+  color: #444797;
 }
 
 .nosotros .nosotros-text p,
@@ -450,6 +450,13 @@ nav .link-item:hover::after {
   color: #444797;
 }
 
+.nosotros .nosotros-title img,
+.nosotros .art-title img,
+.art .nosotros-title img,
+.art .art-title img {
+  max-width: 25%;
+}
+
 .abono {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,8 +474,8 @@ nav .link-item:hover::after {
 .abono .abono-text {
   width: 40%;
   font-size: 1.2rem;
-  border-right: 4px solid #444797;
-  color: #9ec41a;
+  border-right: 4px solid #f9b233;
+  color: #444797;
 }
 
 .abono .abono-text p {
@@ -482,12 +489,17 @@ nav .link-item:hover::after {
   color: #444797;
 }
 
+.abono .abono-title img {
+  max-width: 40%;
+}
+
 .servicios-title {
   font-family: "Baloo 2", cursive;
   text-transform: uppercase;
   font-size: 1.5rem;
   padding: 30px 0;
   text-align: center;
+  color: #444797;
 }
 
 .servicios {
@@ -512,6 +524,8 @@ nav .link-item:hover::after {
 
 .servicios h3 {
   padding: 20px;
+  font-size: 1.5rem;
+  color: #444797;
 }
 
 footer {
@@ -677,6 +691,7 @@ footer .footer-logo img {
   .art .art-title,
   .art .art-text {
     width: 90%;
+    margin: auto;
   }
   .masthead .masthead-text,
   .nosotros .masthead-text,
