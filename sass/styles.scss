@@ -125,7 +125,7 @@ $font-bebas: 'Bebas Neue', cursive;
     .contacto-title {
         z-index: 100;
         border: 2px solid $primary-color;
-        border-radius: 10px;
+        border-radius: 20px;
         width: 98%;
         cursor: pointer;
         background-color: $sec-azul;
@@ -188,7 +188,7 @@ nav {
     height: 100px;
     transition: background-color 1s;
     .nav-logo {
-        width: 15%;
+        width: 180px;
         display: flex;
         align-items: center;
         margin-left: 30px;
@@ -338,7 +338,6 @@ nav {
     justify-content: center;
     align-items: center;
     font-family: $font-baloo;
-    // background-color: $primary-color;
     padding: 50px 0;
     .abono-text {
         width: 40%;
@@ -443,6 +442,9 @@ footer {
     nav {
         display: block;
         text-align: start;
+        img {
+            margin-top: 9px;
+        }
         .link {
             position: absolute;
             top: 100px;
@@ -511,6 +513,7 @@ footer {
     }
     .masthead {
         height: auto;
+        padding-top: 110px;
         padding-bottom: 30px;
     }
     .abono {
