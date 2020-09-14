@@ -7,10 +7,17 @@ document.getElementById("btn-menu").addEventListener("click", () => {
 document.addEventListener('scroll', e => {
   const scroll = window.scrollY;
   const nav = document.querySelector('nav');
+  const imgNav = document.getElementById('img-navegacion');
   if(scroll > 100) {
-      nav.classList.add('bg')
+    nav.classList.add('bg');
+    imgNav.classList.remove('img-mono');
+    imgNav.classList.add('img-color');
+    imgNav.src = 'img/logo.svg';
   } else {
-      nav.classList.remove('bg')
+    nav.classList.remove('bg')
+    imgNav.classList.remove('img-color');
+    imgNav.classList.add('img-mono');
+    imgNav.src = 'img/logo-peq.svg';
   }
 })
 

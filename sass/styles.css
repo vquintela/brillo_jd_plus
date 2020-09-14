@@ -262,8 +262,12 @@ nav .nav-logo {
   margin-left: 30px;
 }
 
-nav .nav-logo img {
-  max-width: 100%;
+nav .nav-logo .img-color {
+  max-width: 80%;
+}
+
+nav .nav-logo .img-mono {
+  max-width: 50%;
 }
 
 nav .link {
@@ -392,7 +396,7 @@ nav .link-item:hover::after {
 }
 
 .masthead .masthead-img img {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .masthead .masthead-text {
@@ -583,8 +587,18 @@ footer .title-contacto i {
   font-size: 1rem;
 }
 
+footer .footer-logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 footer .footer-logo img {
-  max-width: 100%;
+  max-width: 60%;
 }
 
 @media screen and (max-width: 850px) {
@@ -719,6 +733,10 @@ footer .footer-logo img {
   footer {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 70px;
+  }
+  footer .footer-logo {
+    margin: 20px 0;
   }
   .servicios {
     -ms-grid-columns: (1fr)[1];
