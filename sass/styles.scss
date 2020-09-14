@@ -194,6 +194,8 @@ nav {
         margin-left: 30px;
         .img-color {
             max-width: 80%;
+            opacity: 1;
+            animation: imgNav 2s;
         }
         .img-mono {
             max-width: 50%;
@@ -235,6 +237,12 @@ nav {
     .link-item:hover::before,
     .link-item:hover::after {
         transform: translateX(0);
+    }
+}
+
+@keyframes imgNav {
+    0% {
+        opacity: 0;
     }
 }
 

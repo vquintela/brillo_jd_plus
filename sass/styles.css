@@ -264,6 +264,9 @@ nav .nav-logo {
 
 nav .nav-logo .img-color {
   max-width: 80%;
+  opacity: 1;
+  -webkit-animation: imgNav 2s;
+          animation: imgNav 2s;
 }
 
 nav .nav-logo .img-mono {
@@ -327,6 +330,18 @@ nav .link-item:hover::before,
 nav .link-item:hover::after {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+@-webkit-keyframes imgNav {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes imgNav {
+  0% {
+    opacity: 0;
+  }
 }
 
 .bg {
