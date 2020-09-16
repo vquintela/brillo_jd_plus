@@ -45,7 +45,7 @@
 }
 
 .mascara .contenido .modal-title img {
-  max-width: 15%;
+  max-width: 10%;
 }
 
 .mascara .contenido .modal-body p {
@@ -345,17 +345,7 @@ nav .link-item:hover::after {
 }
 
 .bg {
-  background-color: #444797;
-}
-
-.bg .link a {
-  color: #9ec41a;
-}
-
-.bg .link-item::before,
-.bg .link-item::after {
-  content: "";
-  background-color: #9ec41a;
+  background-color: #b4e0f5;
 }
 
 .masthead {
@@ -448,7 +438,7 @@ nav .link-item:hover::after {
 .art .art-text {
   width: 30%;
   font-size: 1.2rem;
-  border-left: 4px solid #f9b233;
+  border-left: 4px solid #9ec41a;
   color: #444797;
 }
 
@@ -493,7 +483,7 @@ nav .link-item:hover::after {
 .abono .abono-text {
   width: 40%;
   font-size: 1.2rem;
-  border-right: 4px solid #f9b233;
+  border-right: 4px solid #9ec41a;
   color: #444797;
 }
 
@@ -553,8 +543,8 @@ footer {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   font-family: "Baloo 2", cursive;
-  background-color: #444797;
-  color: #9ec41a;
+  background-color: #b4e0f5;
+  color: #444797;
   padding: 25px 0;
 }
 
@@ -577,7 +567,7 @@ footer .footer-redes {
 }
 
 footer .footer-redes i {
-  color: #9ec41a;
+  color: #444797;
   font-size: 2.5rem;
   margin: 10px 20px;
 }
