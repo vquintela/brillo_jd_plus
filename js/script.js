@@ -24,7 +24,11 @@ document.addEventListener('scroll', e => {
 // BOTON CONTACTO TOGGLE
 document.getElementById('contacto-title').addEventListener('click', () => {
   document.querySelector('.contacto-items').classList.toggle('show-contacto');
-})
+});
+
+document.querySelector('.enviar-cotizacion').addEventListener('click', () => {
+  document.querySelector('.contacto-items').classList.toggle('show-contacto');
+});
 
 // CHEQUEO NAVEGADOR INSERTA URL WHATSAPP
 window.onload = () => {
@@ -46,6 +50,15 @@ window.onload = () => {
 
 // FORMULARIO DE CONTACTO
 document.getElementById('modal-email').addEventListener('click', () => {
+  modal();
+});
+
+document.querySelector('.enviar-cotizacion').addEventListener('click', () => {
+  modal();
+});
+
+// CARGA MODAL CONTACTO
+const modal = () => {
   document.querySelector('body').style.overflowY = 'hidden';
   const modal = document.getElementById('modal-contacto');
   modal.style.display = 'block';
@@ -55,14 +68,87 @@ document.getElementById('modal-email').addEventListener('click', () => {
   })
   document.getElementById('consulta').addEventListener('click', () => {
     email()
-  })
-})
+  });
+}
 
+// VALIDACION Y ENVIO DE FORMULARIO DE CONTACTO
 const email = () => {
-  document.getElementById('modal-contacto').style.display = 'none';
-  document.getElementById('modal-confirm').style.display = 'block';
-  document.getElementById('aceptarEditarButton').addEventListener('click', () => {
-    document.getElementById('modal-confirm').style.display = 'none';
-    document.querySelector('body').style.overflowY = 'visible';
-  })
+  const nombre = document.getElementById('nombre').value;
+  const telefono = document.getElementById('celular').value;
+  const mail = document.getElementById('correo').value;
+  const comentario = document.getElementById('mensaje').value;
+  const expresion = /\w+@\w+\.+[a-z]/;
+
+  if (nombre === "" || mail === "" || telefono === "" || comentario === "") {
+      if (nombre === "") {
+          document.getElementById('errorNombre').innerText = "¡Campo obligatorio!";
+      } else {
+          document.getElementById('errorNombre').innerText = "";
+          if (nombre.length > 15) {
+              document.getElementById('errorNombre').innerText = "¡El nombre es demasiado largo!";
+          }
+      }
+      if (mail === "") {
+          document.getElementById('errorEmail').innerText = "¡Campo obligatorio!";
+      } else {
+          document.getElementById('errorEmail').innerText = "";
+          if (mail.length > 35) {
+              document.getElementById('errorEmail').innerText = "¡El Mail es demasiado largo!";
+          } else if (!expresion.test(mail)) {
+              document.getElementById('errorEmail').innerText = "¡El mail no es del formato correcto!";
+          }
+      }
+      if (telefono === "") {
+          document.getElementById('errorTelefono').innerText = "¡Campo obligatorio!";
+      } else {
+          document.getElementById('errorTelefono').innerText = "";
+          if (telefono.length > 10) {
+              document.getElementById('errorTelefono').innerText = "¡El telefono es demasiado largo!";
+          } else if (isNaN(telefono)) {
+              document.getElementById('errorTelefono').innerText = "¡El telefono debe ser numerico!";
+          }
+      }
+      if (comentario === "") {
+          document.getElementById('errorComentario').innerText = "¡Campo obligatorio!";
+      } else {
+          document.getElementById('errorComentario').innerText = "";
+      }
+  } else if (nombre.length > 15 || mail.length > 35 || !expresion.test(mail) || telefono.length > 10 || isNaN(telefono)) {
+      if (nombre.length > 15) {
+          document.getElementById('errorNombre').innerText = "¡El nombre es demasiado largo!";
+      } else {
+          document.getElementById('errorNombre').innerText = "";
+      }
+      if (mail.length > 35) {
+          document.getElementById('errorEmail').innerText = "¡El Mail es demasiado largo!";
+      } else if (!expresion.test(mail)) {
+          document.getElementById('errorEmail').innerText = "¡El mail no es del formato correcto!";
+      } else {
+          document.getElementById('errorEmail').innerText = "";
+      }
+      if (telefono.length > 10) {
+          document.getElementById('errorTelefono').innerText = "¡El telefono es demasiado largo!";
+      } else if (isNaN(telefono)) {
+          document.getElementById('errorTelefono').innerText = "¡El telefono debe ser numerico!";
+      } else {
+          document.getElementById('errorTelefono').innerText = "";
+      }
+  } else {
+    const formData = new FormData();
+    formData.append('nombre', nombre);
+    formData.append('telefono', telefono);
+    formData.append('mail', mail);
+    formData.append('comentario', comentario);
+    fetch("php/email.php", { 
+        method: 'POST', 
+        body: formData })
+        .then(function (response) {
+            return response.text();
+        });
+    document.getElementById('modal-contacto').style.display = 'none';
+    document.getElementById('modal-confirm').style.display = 'block';
+    document.getElementById('aceptarEditarButton').addEventListener('click', () => {
+      location.reload();
+    });
+  }
 }
