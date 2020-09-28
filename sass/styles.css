@@ -352,10 +352,9 @@ nav .link-item:hover::after {
   width: 100%;
   height: 100vh;
   overflow-y: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/limp.jpeg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/limp.jpeg);
+  background-image: url(../img/hombre.jpeg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,21 +367,38 @@ nav .link-item:hover::after {
           justify-content: center;
 }
 
-.masthead .masthead-img {
-  width: 40%;
-  font-family: "Baloo 2", cursive;
-  color: white;
+.masthead .masthead-contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  width: 70%;
+  padding: 15px 30px;
+  border-radius: 20px;
 }
 
-.masthead .masthead-img h1 {
+.masthead .masthead-contenedor .masthead-img {
+  width: 50%;
+  font-family: "Baloo 2", cursive;
+  color: #444797;
+}
+
+.masthead .masthead-contenedor .masthead-img h1 {
   margin: 5px 0;
 }
 
-.masthead .masthead-img h3 {
+.masthead .masthead-contenedor .masthead-img h3 {
   margin: 0;
 }
 
-.masthead .masthead-img .btn {
+.masthead .masthead-contenedor .masthead-img .btn {
   border: 1px solid #b4e0f5;
   border-radius: 20px;
   color: #f9b233;
@@ -394,94 +410,108 @@ nav .link-item:hover::after {
   transition: background-color 1s;
 }
 
-.masthead .masthead-img .btn:hover {
+.masthead .masthead-contenedor .masthead-img .btn:hover {
   background-color: #f9b233;
   color: #b4e0f5;
   border-color: #f9b233;
 }
 
-.masthead .masthead-img img {
+.masthead .masthead-contenedor .masthead-img img {
   max-width: 80%;
 }
 
-.masthead .masthead-text {
-  width: 30%;
+.masthead .masthead-contenedor .masthead-text {
+  width: 50%;
   border-left: 4px solid #9ec41a;
 }
 
-.masthead .masthead-text p {
-  color: white;
+.masthead .masthead-contenedor .masthead-text p {
+  color: #444797;
   margin-left: 15px;
   font-family: "Baloo 2", cursive;
   font-size: 1.2rem;
 }
 
-.nosotros,
-.art {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.nosotros {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  min-height: 400px;
   font-family: "Baloo 2", cursive;
   background-color: #b4e0f5;
   padding: 50px 0;
 }
 
-.nosotros .nosotros-text,
-.nosotros .art-text,
-.art .nosotros-text,
-.art .art-text {
-  width: 30%;
+.nosotros .nosotros-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
   font-size: 1.2rem;
   border-left: 4px solid #9ec41a;
   color: #444797;
 }
 
-.nosotros .nosotros-text p,
-.nosotros .art-text p,
-.art .nosotros-text p,
-.art .art-text p {
+.nosotros .nosotros-text p {
   margin-left: 15px;
 }
 
-.nosotros .nosotros-title,
-.nosotros .art-title,
-.art .nosotros-title,
-.art .art-title {
-  width: 40%;
-  text-align: right;
-  margin-right: 50px;
-  color: #444797;
-}
-
-.nosotros .nosotros-title img,
-.nosotros .art-title img,
-.art .nosotros-title img,
-.art .art-title img {
-  max-width: 25%;
-}
-
-.abono {
+.nosotros .nosotros-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 5px;
+  margin-left: auto;
+  color: #444797;
+  padding: 30px 20px 30px 100px;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.nosotros .nosotros-title img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  max-width: 50%;
+}
+
+.nosotros-title {
+  background-image: url(../img/manos.jpeg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.abono {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  min-height: 400px;
   font-family: "Baloo 2", cursive;
   padding: 50px 0;
 }
 
 .abono .abono-text {
-  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin-left: auto;
   font-size: 1.2rem;
   border-right: 4px solid #9ec41a;
   color: #444797;
@@ -493,20 +523,102 @@ nav .link-item:hover::after {
 }
 
 .abono .abono-title {
-  width: 30%;
-  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+  padding: 30px 100px 30px 20px;
   color: #444797;
+  border-radius: 20px;
+  margin-left: 5px;
 }
 
 .abono .abono-title img {
   max-width: 40%;
 }
 
+.abono-title {
+  background-image: url(../img/estropajo.jpeg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.art {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  min-height: 400px;
+  font-family: "Baloo 2", cursive;
+  background-color: #b4e0f5;
+  padding: 50px 0;
+}
+
+.art .art-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  font-size: 1.2rem;
+  border-left: 4px solid #9ec41a;
+  color: #444797;
+}
+
+.art .art-text p {
+  margin-left: 15px;
+}
+
+.art .art-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 5px;
+  margin-left: auto;
+  color: #444797;
+  padding: 30px 20px 30px 100px;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.art .art-title img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  max-width: 25%;
+}
+
+.art .art-title h1 {
+  text-align: end;
+}
+
+.art-title {
+  background-image: url(../img/piso.jpeg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
 .servicios-title {
   font-family: "Baloo 2", cursive;
   text-transform: uppercase;
   font-size: 1.5rem;
-  padding: 30px 0;
   text-align: center;
   color: #444797;
 }
@@ -663,6 +775,56 @@ footer .footer-logo img {
     margin: auto;
     max-width: 80%;
   }
+  .nosotros,
+  .art {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nosotros .nosotros-title,
+  .nosotros .art-title,
+  .art .nosotros-title,
+  .art .art-title {
+    width: 80%;
+    margin: 15px auto;
+    padding: 30px 10px;
+  }
+  .nosotros .nosotros-title .nosotros-title-contenido h1,
+  .nosotros .art-title .nosotros-title-contenido h1,
+  .art .nosotros-title .nosotros-title-contenido h1,
+  .art .art-title .nosotros-title-contenido h1 {
+    text-align: right;
+  }
+  .nosotros .nosotros-text,
+  .nosotros .art-text,
+  .art .nosotros-text,
+  .art .art-text {
+    margin: 15px auto;
+  }
+  .abono {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .abono .abono-title {
+    width: 80%;
+    padding: 30px 10px;
+  }
+  .abono .abono-text {
+    margin: 15px auto;
+  }
   .servicios {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -670,61 +832,27 @@ footer .footer-logo img {
 }
 
 @media screen and (max-width: 750px) {
-  .masthead,
-  .nosotros,
-  .abono,
-  .art {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 80px;
-  }
-  .masthead .masthead-img,
-  .masthead .masthead-text,
-  .masthead .nosotros-title,
-  .masthead .nosotros-text,
-  .masthead .abono-title,
-  .masthead .abono-text,
-  .masthead .art-title,
-  .masthead .art-text,
-  .nosotros .masthead-img,
-  .nosotros .masthead-text,
-  .nosotros .nosotros-title,
-  .nosotros .nosotros-text,
-  .nosotros .abono-title,
-  .nosotros .abono-text,
-  .nosotros .art-title,
-  .nosotros .art-text,
-  .abono .masthead-img,
-  .abono .masthead-text,
-  .abono .nosotros-title,
-  .abono .nosotros-text,
-  .abono .abono-title,
-  .abono .abono-text,
-  .abono .art-title,
-  .abono .art-text,
-  .art .masthead-img,
-  .art .masthead-text,
-  .art .nosotros-title,
-  .art .nosotros-text,
-  .art .abono-title,
-  .art .abono-text,
-  .art .art-title,
-  .art .art-text {
-    width: 90%;
-    margin: auto;
-  }
-  .masthead .masthead-text,
-  .nosotros .masthead-text,
-  .abono .masthead-text,
-  .art .masthead-text {
-    margin-top: 30px;
-  }
   .masthead {
     height: auto;
     padding-top: 110px;
     padding-bottom: 30px;
+  }
+  .masthead .masthead-contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px;
+    width: 100%;
+    margin: 0 10px;
+  }
+  .masthead .masthead-contenedor .masthead-img,
+  .masthead .masthead-contenedor .masthead-text {
+    width: 100%;
+    margin: auto;
+  }
+  .masthead .masthead-contenedor .masthead-text {
+    margin-top: 30px;
   }
   .abono {
     -webkit-box-orient: vertical;

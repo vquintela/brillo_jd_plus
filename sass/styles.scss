@@ -248,16 +248,6 @@ nav {
 
 .bg {
     background-color: $primary-color;
-    // .link {
-    //     a {
-    //         color: $sec-azul;
-    //     }
-    // }
-    // .link-item::before, 
-    // .link-item::after {
-    //     content: "";
-    //     background-color: $sec-azul;
-    // }
 }
 
 // CONTENIDO
@@ -265,66 +255,76 @@ nav {
     width: 100%;
     height: 100vh;
     overflow-y: hidden;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/limp.jpeg);
+    // background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),url(../img/hombre.jpg);
+    background-image: url(../img/hombre.jpeg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: top;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    .masthead-img {
-        width: 40%;
-        font-family: $font-baloo;
-        color: white;
-        h1 {
-            margin: 5px 0;
-        }
-        h3 {
-            margin: 0;
-        }
-        .btn {
-            border: 1px solid $primary-color;
-            border-radius: 20px;
-            color: $sec-naranja;
-            background-color: $sec-azul;
-            padding: 10px 35px;
-            margin-top: 15px;
-            font-weight: bolder;
-            transition: background-color 1s;
-        }
-        .btn:hover {
-            background-color: $sec-naranja;
-            color: $primary-color;
-            border-color: $sec-naranja;
-        }
-        img {
-            max-width: 80%;
-        }
-    }
-    .masthead-text {
-        width: 30%;
-        border-left: 4px solid $sec-verde;
-        p {
-            color: white;
-            margin-left: 15px;
+    .masthead-contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7) );
+        width: 70%;
+        padding: 15px 30px;
+        border-radius: 20px;
+        .masthead-img {
+            width: 50%;
             font-family: $font-baloo;
-            font-size: 1.2rem;
+            color: $sec-azul;
+            h1 {
+                margin: 5px 0;
+            }
+            h3 {
+                margin: 0;
+            }
+            .btn {
+                border: 1px solid $primary-color;
+                border-radius: 20px;
+                color: $sec-naranja;
+                background-color: $sec-azul;
+                padding: 10px 35px;
+                margin-top: 15px;
+                font-weight: bolder;
+                transition: background-color 1s;
+            }
+            .btn:hover {
+                background-color: $sec-naranja;
+                color: $primary-color;
+                border-color: $sec-naranja;
+            }
+            img {
+                max-width: 80%;
+            }
+        }
+        .masthead-text {
+            width: 50%;
+            border-left: 4px solid $sec-verde;
+            p {
+                color: $sec-azul;
+                margin-left: 15px;
+                font-family: $font-baloo;
+                font-size: 1.2rem;
+            }
         }
     }
 }
 
 // NOSOTROS
-.nosotros,
-.art {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 400px;
     font-family: $font-baloo;
     background-color: $primary-color;
     padding: 50px 0;
-    .nosotros-text,
-    .art-text {
-        width: 30%;
+    .nosotros-text {
+        display: flex;
+        align-items: center;
+        width: 80%;
         font-size: 1.2rem;
         border-left: 4px solid $sec-verde;
         color: $sec-azul;
@@ -332,26 +332,42 @@ nav {
             margin-left: 15px;
         }
     }
-    .nosotros-title,
-    .art-title {
-        width: 40%;
-        text-align: right;
-        margin-right: 50px;
+    .nosotros-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 5px;
+        margin-left: auto;
         color: $sec-azul;
+        padding: 30px 20px 30px 100px;
+        width: 50%;
+        border-radius: 20px;
         img {
-            max-width: 25%;
+            display: flex;
+            margin-left: auto;
+            max-width: 50%;
         }
     }
 }
 
+.nosotros-title {
+    background-image: url(../img/manos.jpeg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
 .abono {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 400px;
     font-family: $font-baloo;
     padding: 50px 0;
     .abono-text {
-        width: 40%;
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin-left: auto;
         font-size: 1.2rem;
         border-right: 4px solid $sec-verde;
         color: $sec-azul;
@@ -361,24 +377,108 @@ nav {
         }
     }
     .abono-title {
-        width: 30%;
-        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+        padding: 30px 100px 30px 20px;
         color: $sec-azul;
+        border-radius: 20px;
+        margin-left: 5px;
         img {
             max-width: 40%;
         }
     }
 }
 
+.abono-title {
+    background-image: url(../img/estropajo.jpeg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.art {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 400px;
+    font-family: $font-baloo;
+    background-color: $primary-color;
+    padding: 50px 0;
+    .art-text {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        font-size: 1.2rem;
+        border-left: 4px solid $sec-verde;
+        color: $sec-azul;
+        p {
+            margin-left: 15px;
+        }
+    }
+    .art-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 5px;
+        margin-left: auto;
+        color: $sec-azul;
+        padding: 30px 20px 30px 100px;
+        width: 50%;
+        border-radius: 20px;
+        img {
+            display: flex;
+            margin-left: auto;
+            max-width: 25%;
+        }
+        h1 {
+            text-align: end;
+        }
+    }
+}
+
+.art-title {
+    background-image: url(../img/piso.jpeg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+
 // SERVICIOS
 .servicios-title {
     font-family: $font-baloo;
     text-transform: uppercase;
     font-size: 1.5rem;
-    padding: 30px 0;
+    // padding: 30px 0;
     text-align: center;
     color: $sec-azul;
 }
+
+// .servicios {
+//     display: flex;
+//     flex-direction: column;
+//     width: 55%;
+//     margin: auto;
+//     margin-bottom: 50px;
+//     border: 4px solid $sec-verde;
+//     padding: 15px 30px;
+//     border-radius: 20px;
+//     background-color: $primary-color;
+//     .servicios-col {
+//         display: flex;
+//         align-items: center;
+//         h3 {
+//             font-family: $font-baloo;
+//             font-size: 1.5rem;
+//             color: $sec-azul;
+//             margin: 10px;
+//         }
+//         i {
+//             color: $sec-azul;
+//         }
+//     }
+// }
 
 .servicios {
     display: grid;
@@ -498,37 +598,63 @@ footer {
             max-width: 80%;
         }
     }
+    .nosotros,
+    .art {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        .nosotros-title,
+        .art-title {
+            width: 80%;
+            margin: 15px auto;
+            padding: 30px 10px;
+            .nosotros-title-contenido {
+                h1 {
+                    text-align: right;
+                }
+            }
+        }
+        .nosotros-text,
+        .art-text {
+            margin: 15px auto;
+        }
+    }
+    .abono {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        .abono-title {
+            width: 80%;
+            padding: 30px 10px;
+        }
+        .abono-text {
+            margin: 15px auto;
+        }
+    }
     .servicios {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width:750px){
-    .masthead,
-    .nosotros,
-    .abono,
-    .art {
-        flex-direction: column;
-        padding-top: 80px;
-        .masthead-img,
-        .masthead-text,
-        .nosotros-title,
-        .nosotros-text,
-        .abono-title,
-        .abono-text,
-        .art-title,
-        .art-text {
-            width: 90%;
-            margin: auto;
-        }
-        .masthead-text {
-            margin-top: 30px;
-        }
-    }
     .masthead {
         height: auto;
         padding-top: 110px;
         padding-bottom: 30px;
+        .masthead-contenedor {
+            flex-direction: column;
+            padding: 15px;
+            width: 100%;
+            margin: 0 10px;
+            .masthead-img,
+            .masthead-text {
+                width: 100%;
+                margin: auto;
+            }
+            .masthead-text {
+                margin-top: 30px;
+            }
+        }
     }
     .abono {
         flex-direction: column-reverse;
