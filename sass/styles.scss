@@ -343,9 +343,9 @@ nav {
         width: 50%;
         border-radius: 20px;
         .nosotros-title-contenido {
-            background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4));
-            padding: 10px 15px;
-            border-radius: 20px;
+            // background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4));
+            // padding: 10px 15px;
+            // border-radius: 20px;
             img {
                 display: flex;
                 margin-left: auto;
@@ -356,7 +356,7 @@ nav {
 }
 
 .nosotros-title {
-    background-image: url(../img/manos.jpeg);
+    background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(../img/manos.jpeg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -391,9 +391,9 @@ nav {
         border-radius: 20px;
         margin-left: 5px;
         .abono-title-contenedor {
-            background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4));
-            padding: 10px 15px;
-            border-radius: 20px;
+            // background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4));
+            // padding: 10px 15px;
+            // border-radius: 20px;
             img {
                 max-width: 40%;
             }
@@ -402,7 +402,7 @@ nav {
 }
 
 .abono-title {
-    background-image: url(../img/estropajo.jpeg);
+    background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(../img/estropajo.jpeg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -437,9 +437,9 @@ nav {
         width: 50%;
         border-radius: 20px;
         .art-title-contenedor {
-            background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4));
-            padding: 10px 5px;
-            border-radius: 20px;
+            // background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4));
+            // padding: 10px 5px;
+            // border-radius: 20px;
             img {
                 display: flex;
                 margin-left: auto;
@@ -453,7 +453,7 @@ nav {
 }
 
 .art-title {
-    background-image: url(../img/piso.jpeg);
+    background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(../img/piso.jpeg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;

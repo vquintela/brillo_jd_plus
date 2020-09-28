@@ -478,13 +478,6 @@ nav .link-item:hover::after {
   border-radius: 20px;
 }
 
-.nosotros .nosotros-title .nosotros-title-contenido {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4)));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
-  padding: 10px 15px;
-  border-radius: 20px;
-}
-
 .nosotros .nosotros-title .nosotros-title-contenido img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,7 +487,8 @@ nav .link-item:hover::after {
 }
 
 .nosotros-title {
-  background-image: url(../img/manos.jpeg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url(../img/manos.jpeg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../img/manos.jpeg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -546,19 +540,13 @@ nav .link-item:hover::after {
   margin-left: 5px;
 }
 
-.abono .abono-title .abono-title-contenedor {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4)));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
-  padding: 10px 15px;
-  border-radius: 20px;
-}
-
 .abono .abono-title .abono-title-contenedor img {
   max-width: 40%;
 }
 
 .abono-title {
-  background-image: url(../img/estropajo.jpeg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url(../img/estropajo.jpeg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../img/estropajo.jpeg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -610,13 +598,6 @@ nav .link-item:hover::after {
   border-radius: 20px;
 }
 
-.art .art-title .art-title-contenedor {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4)));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
-  padding: 10px 5px;
-  border-radius: 20px;
-}
-
 .art .art-title .art-title-contenedor img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,7 +611,8 @@ nav .link-item:hover::after {
 }
 
 .art-title {
-  background-image: url(../img/piso.jpeg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url(../img/piso.jpeg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../img/piso.jpeg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
