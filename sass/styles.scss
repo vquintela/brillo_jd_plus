@@ -342,10 +342,15 @@ nav {
         padding: 30px 20px 30px 100px;
         width: 50%;
         border-radius: 20px;
-        img {
-            display: flex;
-            margin-left: auto;
-            max-width: 50%;
+        .nosotros-title-contenido {
+            background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4));
+            padding: 10px 15px;
+            border-radius: 20px;
+            img {
+                display: flex;
+                margin-left: auto;
+                max-width: 50%;
+            }
         }
     }
 }
@@ -385,8 +390,13 @@ nav {
         color: $sec-azul;
         border-radius: 20px;
         margin-left: 5px;
-        img {
-            max-width: 40%;
+        .abono-title-contenedor {
+            background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4));
+            padding: 10px 15px;
+            border-radius: 20px;
+            img {
+                max-width: 40%;
+            }
         }
     }
 }
@@ -426,13 +436,18 @@ nav {
         padding: 30px 20px 30px 100px;
         width: 50%;
         border-radius: 20px;
-        img {
-            display: flex;
-            margin-left: auto;
-            max-width: 25%;
-        }
-        h1 {
-            text-align: end;
+        .art-title-contenedor {
+            background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4));
+            padding: 10px 5px;
+            border-radius: 20px;
+            img {
+                display: flex;
+                margin-left: auto;
+                max-width: 25%;
+            }
+            h1 {
+                text-align: end;
+            }
         }
     }
 }

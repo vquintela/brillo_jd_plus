@@ -478,7 +478,14 @@ nav .link-item:hover::after {
   border-radius: 20px;
 }
 
-.nosotros .nosotros-title img {
+.nosotros .nosotros-title .nosotros-title-contenido {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.nosotros .nosotros-title .nosotros-title-contenido img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,7 +546,14 @@ nav .link-item:hover::after {
   margin-left: 5px;
 }
 
-.abono .abono-title img {
+.abono .abono-title .abono-title-contenedor {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.abono .abono-title .abono-title-contenedor img {
   max-width: 40%;
 }
 
@@ -596,7 +610,14 @@ nav .link-item:hover::after {
   border-radius: 20px;
 }
 
-.art .art-title img {
+.art .art-title .art-title-contenedor {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  padding: 10px 5px;
+  border-radius: 20px;
+}
+
+.art .art-title .art-title-contenedor img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,7 +625,7 @@ nav .link-item:hover::after {
   max-width: 25%;
 }
 
-.art .art-title h1 {
+.art .art-title .art-title-contenedor h1 {
   text-align: end;
 }
 
