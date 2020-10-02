@@ -444,7 +444,7 @@ nav {
 }
 
 .art-title {
-    background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(../img/piso.jpeg);
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../img/oficina.jpeg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -460,23 +460,81 @@ nav {
     color: $sec-azul;
 }
 
-.servicios {
+// .servicios {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     gap: 30px;
+//     text-align: center;
+//     font-family: $font-baloo;
+//     width: 90%;
+//     margin: 50px auto;
+//     img {
+//         display: flex;
+//         margin: auto;
+//         max-width: 40%;
+//     }
+//     h3 {
+//         padding:20px;
+//         font-size: 1.5rem;
+//         color: $sec-azul;
+//     }
+// }
+
+// SERVICIOS 2
+.servicios2 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     text-align: center;
     font-family: $font-baloo;
     width: 90%;
     margin: 50px auto;
-    img {
+    .servicios2-col {
         display: flex;
-        margin: auto;
-        max-width: 40%;
+        align-items: flex-end;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        height: 400px;
+        .servicios2-text {
+            background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7));
+            display: flex;
+            min-height: 40%;
+            width: 100%;
+            .servicios2-text-1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20%;
+                img {
+                    max-width: 70%;
+                }
+            }
+            .servicios2-text-2 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                h3 {
+                    margin-left: 10px;
+                    padding: 10px 0 10px 20px;
+                    // font-size: 1.2rem;
+                    color: $sec-azul;
+                    border-left: 4px solid $sec-verde;
+                    text-align: left;
+                }
+            }
+        }
     }
-    h3 {
-        padding:20px;
-        font-size: 1.5rem;
-        color: $sec-azul;
+    .servicios2-col:first-child {
+        background-image: url(../img/piso.jpeg);
+    }
+    .servicios2-col:nth-child(2) {
+        background-image: url(../img/oficina3.jpeg);
+    }
+    .servicios2-col:last-child {
+        background-image: url(../img/local.jpeg);
     }
 }
 
@@ -613,6 +671,12 @@ footer {
     }
     .servicios {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .servicios2 {
+        grid-template-columns: repeat(1, 1fr);
+        .servicios2-col {
+            height: 500px;
+        }
     }
 }
 
