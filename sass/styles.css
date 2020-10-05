@@ -368,6 +368,7 @@ nav .link-item:hover::after {
 }
 
 .masthead .masthead-contenedor {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,6 +393,11 @@ nav .link-item:hover::after {
 
 .masthead .masthead-contenedor .masthead-img h1 {
   margin: 5px 0;
+  color: #9ec41a;
+}
+
+.masthead .masthead-contenedor .masthead-img h2 {
+  margin: 0;
 }
 
 .masthead .masthead-contenedor .masthead-img h3 {
@@ -418,6 +424,11 @@ nav .link-item:hover::after {
 
 .masthead .masthead-contenedor .masthead-img img {
   max-width: 80%;
+}
+
+.masthead .masthead-contenedor .masthead-img .verde {
+  color: #9ec41a;
+  margin-bottom: 0.7em;
 }
 
 .masthead .masthead-contenedor .masthead-text {

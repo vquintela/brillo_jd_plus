@@ -264,6 +264,7 @@ nav {
     align-items: center;
     justify-content: center;
     .masthead-contenedor {
+        margin-top: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -277,6 +278,10 @@ nav {
             color: $sec-azul;
             h1 {
                 margin: 5px 0;
+                color: $sec-verde;
+            }
+            h2 {
+                margin: 0;
             }
             h3 {
                 margin: 0;
@@ -298,6 +303,10 @@ nav {
             }
             img {
                 max-width: 80%;
+            }
+            .verde {
+                color: $sec-verde;
+                margin-bottom: 0.7em;
             }
         }
         .masthead-text {
